@@ -1,0 +1,3 @@
+commandSenderHC05.MainActivity, commandSenderHC05;crc64d29de13159f2ed4e.MainActivity
+commandSenderHC05.MainActivity;crc64d29de13159f2ed4e.MainActivity
+commandsenderhc05.MainActivity;crc64d29de13159f2ed4e.MainActivity

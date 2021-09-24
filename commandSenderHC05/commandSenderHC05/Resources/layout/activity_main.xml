@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="14"
+    android:columnCount="4"
+    android:orientation="vertical">
+    <TextView
+        android:text="Stato:"
+        android:textSize="25dip"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <TextView
+        android:id="@+id/textViewStato"
+        android:text="Disconnesso"
+        android:textSize="25dip"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <Space
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_width="50dp"
+        android:layout_height="10dp" />
+    <Space
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_width="5dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/buttonConnect"
+        android:text="CONNECT"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="right|center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <Button
+        android:id="@+id/buttonDisonnect"
+        android:text="DISCONNECT"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:layout_gravity="center|left"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <TextView
+        
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Debug info:"
+        android:textSize="20dip"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="right"
+         
+        />
+    <TextView
+        android:id="@+id/textViewDebug"
+        android:text="app avviata"
+        android:textSize="14dp"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+    <TextView
+        android:layout_marginTop="20dip"
+        android:text="Pick a color"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="right" 
+    />
+    <Spinner
+        android:background="#808080"
+        android:popupBackground="#808080"
+        android:id="@+id/spinnerPickColor"
+        android:prompt="@string/color_prompt"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:layout_gravity="left|bottom"
+        android:layout_width="150dp"
+    />
+    <Button
+        android:layout_marginTop="25dip"
+        android:text="CONVERT HEX VALUE"
+        android:layout_row="5"
+        android:layout_column="2"
+        android:layout_gravity="left"
+        android:id="@+id/buttonHexValue" 
+    />
+    <EditText
+        android:hint="es #ffe6e6"
+        android:id="@+id/edittextHex"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:imeOptions="actionGo"
+        android:inputType="text"
+        android:layout_gravity="bottom"
+        android:layout_width="120dp"
+         />
+    <GridLayout
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom">
+        <EditText
+            android:hint="R"
+            android:id="@+id/edittextRed"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:imeOptions="actionGo"
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            android:inputType="number"
+            android:maxLength="3" 
+            />
+        <EditText
+            android:hint="G"
+            android:id="@+id/edittextGreen"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:imeOptions="actionGo"
+            android:maxLength="3" 
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            android:inputType="number"
+            
+            />
+        <EditText
+            android:maxLength="3" 
+            android:hint="B"
+            android:id="@+id/edittextBlue"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            
+            />
+    </GridLayout>
+    <GridLayout
+        android:layout_row="6"
+        android:layout_column="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom">
+            <Button
+            android:text="SET COLOR"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:id="@+id/buttonSetColor" 
+            />
+        <Space
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="5dp"
+            android:layout_height="10dp"/>
+        <Button
+            android:text="SET A.COLOR"
+            
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_gravity="right"
+            android:id="@+id/buttonSetAnimColor" 
+            />
+      </GridLayout>
+    <TextView
+        android:layout_marginTop="20dip"
+        android:text="Select an animation"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="right" 
+    />
+    <Spinner
+        
+        android:id="@+id/spinnerPickAnim"
+        android:prompt="@string/anim_prompt"
+        android:layout_row="7"
+        android:layout_column="2"
+        android:layout_gravity="left|bottom"
+        android:layout_width="150dp"
+    />
+
+    <Button
+            android:text="play animation"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:id="@+id/buttonPlayAnimation" 
+            />
+    <Button
+            android:text="swap colors"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:id="@+id/buttonSwap" 
+            />
+    <Button
+            android:text="linear blend"
+            android:layout_row="9"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:id="@+id/buttonBlend" 
+            />
+    <Button
+            android:text="no linear blend"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:id="@+id/buttonNoBlend" 
+            />
+    <TextView
+        android:layout_marginTop="30dip"
+        android:text="Brightness control"
+        android:layout_row="10"
+        android:layout_column="0"
+        android:layout_gravity="center" 
+    />
+    <SeekBar
+        android:layout_row="10"
+        android:layout_column="2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/seekbarBrightness"
+        android:progress="64"
+        android:max="255"
+         />  
+    <TextView
+        android:layout_marginTop="20dip"
+        android:text="Select a mic animation"
+        android:layout_row="11"
+        android:layout_column="0"
+        android:layout_gravity="right" 
+    />
+
+    <Spinner
+        
+        android:id="@+id/spinnerPickAnimMic"
+        android:prompt="@string/animMic_prompt"
+        android:layout_row="11"
+        android:layout_column="2"
+        android:layout_gravity="left|bottom"
+        android:layout_width="150dp"
+    />
+    <Button
+            android:text="set mic animation"
+            android:layout_row="12"
+            android:layout_column="2"
+            android:layout_gravity="left"
+            android:id="@+id/buttonSetMicAnimation" 
+            />
+    <GridLayout
+        android:layout_row="12"
+        android:layout_column="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom">
+
+        <Button
+            android:text="mic on"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:id="@+id/buttonMicModeOn" 
+            />
+        <Button
+            android:text="mic off"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:id="@+id/buttonMicModeOff" 
+            />
+    </GridLayout>
+</GridLayout>

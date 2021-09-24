@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">MyBT Controller</string>
+    <string name="action_settings">Settings</string>
+  <string name="color_prompt">Pick a color</string>
+  <string name="anim_prompt">select an animation</string>
+  <string name="animMic_prompt">select a mic animation</string>
+  <string-array name="color_array">
+    <item>None</item>
+    <item>
+      <font color ="#FF0000">#FF0000</font>
+    </item>
+    <item>
+      <font color ="#800000">#800000</font>
+    </item>
+    <item >
+      <font color ="#00FF00">#00FF00</font>
+    </item>
+    <item >
+      <font color ="#008000">#008000</font>
+    </item>
+    <item >
+      <font color ="#0000FF">#0000FF</font>
+    </item>
+    <item>
+      <font color ="#000080">#000080</font>
+    </item>
+    <item>
+      <font color ="#008080">#008080</font>
+    </item>
+    <item>
+      <font color ="#00FFFF">#00FFFF</font>
+    </item>
+    <item>
+      <font color ="#FFFF00">#FFFF00</font>
+    </item>
+    <item>
+      <font color ="#FF6600">#FF6600</font>
+    </item>
+    <item>
+      <font color ="#ffa500">#FFA500</font>
+    </item>
+    <item>
+      <font color ="#800080">#800080</font>
+    </item>
+    <item>
+      <font color ="#6600FF">#6600FF</font>
+    </item>
+    <item>
+      <font color ="#FF00FF">#FF00FF</font>
+    </item>
+    <item>
+      <font color ="#FFFFFF">#FFFFFF</font>
+    </item>
+    
+  </string-array>
+  <string-array name="anim_array">
+    <item>None</item>
+    <item>Random</item>
+    <item>Rainbow</item>
+    <item>RainbowStripe</item>
+    <item>Arrow(ANIMCOL)</item>
+    <item>Fade(ANIMCOL)</item>
+    <item>BlackWhite</item>
+    <item>PurpleGreen</item>
+    <item>Cloud</item>
+    <item>Party</item>
+    <item>Italy</item>
+    <item>Ocean</item>
+    <item>Lava</item>
+    <item>Forest</item>
+    <item>Epilessia</item>
+  </string-array>
+  <string-array name="micAnim_array">
+    <item>None</item>
+    <item>Right</item>
+    <item>Left</item>
+    <item>Center</item>
+    <item>Bright</item>
+    <item>SemaphoreRight</item>
+    <item>SemaphoreLeft</item>
+    <item>SemaphoreCenter</item>
+    <item>SemaphoreBright</item>
+    <item>King</item>
+    <item>KingStatic</item>
+    <item>Italy</item>
+    <item>ItalyStatic</item>
+  </string-array>
+</resources>
